@@ -1,0 +1,187 @@
+//СТИЛИ СТРАНИЦЫ
+
+.payment
+	background-color: #101114
+	min-height: 100vh
+	padding-top: 80px
+	padding-bottom: 80px
+	&-wrapper
+		width: 960px
+		margin-left: auto
+		margin-right: auto
+
+//СТИЛИ СТРАНИЦЫ КОНЕЦ
+
+//СТИЛИ НАВИГАЦИИ НАЧАЛО
+
+.navigation
+	float: left
+	width: 320px
+	font-family: "Open Sans", Arial, sans-serif
+	&-list
+		list-style: none
+		padding: 0
+		margin: 0
+	&__link
+		display: block
+		padding-left: 30px
+		line-height: 75px
+		color: #fff
+		font-weight: bold
+		background-color: #191c24
+		&:hover
+			color: #fff
+			text-decoration: none
+		&_dark-grey
+			background-color: #1f2229
+		&_active
+			background-color: #2a2d37
+			color: #808592
+			&:hover
+				color: #808592
+		&_logout
+			color: #808592
+			border-top: 1px solid #20232b
+			&:hover
+				color: #808592
+
+//СТИЛИ НАВИГАЦИИ НКОНЕЦ
+
+//СТИЛИ ОСНОВНОЙ ЧАСТИ НАЧАЛО
+
+.payment
+	*
+		outline: none
+	&-main
+		width: 640px
+		float: left
+		font-family: Arial, sans-serif
+		font-size: 16px
+		font-weight: normal
+	&-data
+		padding-top: 38px
+		padding-left: 30px
+		background-color: #f7f8f8
+	&__text
+		margin-bottom: 15px
+		color: #bec6cf
+	&-table
+		td
+			height: 26px
+			&:first-child
+				width: 155px
+				color: #bec6cf
+			&:nth-child(2)
+				color: #535864
+	&__caption
+		margin-top: 20px
+		margin-bottom: 20px
+		font-weight: bold
+		color: #383d43
+		font-size: 22px
+		font-family: "Open Sans", Arial, sans-serif
+	&__input
+		height: 42px
+		padding-left: 10px
+		padding-right: 10px
+		max-width: 100%
+		line-height: 40px
+		border: 1px solid #e4e9ee
+		border-radius: 0
+		outline: none
+		&_invalid
+			border-color: red
+	&-form
+		position: relative
+		padding-top: 20px
+		padding-left: 15px
+		padding-bottom: 45px
+		background: url(../img/form-bg.png)  0 0 no-repeat
+		label
+			margin-bottom: 0
+			font-weight: normal
+		&__text
+			margin-bottom: 5px
+			color: #8494ab
+		&__card
+			margin-bottom: 13px
+			label
+				float: left
+				width: 75px
+				padding-right: 10px
+		&-date
+			margin-bottom: 13px
+			.ui-selectmenu-button.ui-button
+				background-color: #f7f8f8
+				padding-top: 12px
+				height: 42px
+				border-radius: 0
+				border-color: #e4e9ee
+				.ui-icon
+					position: absolute
+					right: 10px
+					width: 16px
+					height: 8px
+					top: 17px
+					background: url(../img/caret.png) center no-repeat
+				.ui-selectmenu-text
+					color: #373c43
+					width: 100%
+		&__month
+			float: left
+			padding-right: 10px
+			.ui-selectmenu-button.ui-button
+				width: 70px
+		&__year
+			float: left
+			.ui-selectmenu-button.ui-button
+				width: 87px
+		&__cardholder
+			margin-bottom: 60px
+			input
+				width: 320px
+				&::placeholder
+					color: #bec6cf
+		&__button
+			padding-left: 30px
+			padding-right: 30px
+			line-height: 40px
+			border-radius: 20px
+			background: linear-gradient(to bottom,#005abf,#004ca2)
+			font-family: "Open Sans", Arial, sans-serif
+			font-size: 14px
+			font-weight: bold
+			color: #fff
+			border: none
+			transition-duration: .2s
+			&:active
+				background: linear-gradient(to bottom,#004ca2,#005abf)
+	&-cvv
+		position: absolute
+		right: 60px
+		top: 107px
+		input
+			width: 138px
+		&__tip
+			position: absolute
+			background: url(../img/cvv-bg.png) center no-repeat
+			width: 26px
+			height: 26px
+			bottom: 10px
+			right: 6px
+	&-description
+		padding: 30px
+		background-color: #373c43
+		font-size: 12px
+		line-height: 18px
+		p
+			color: #7f8591
+
+
+.payment-page
+	.ui-menu .ui-menu-item-wrapper
+		font-size: 16px
+		padding-left: 15px
+//СТИЛИ ОСНОВНОЙ ЧАСТИ КОНЕЦ
+
+@import "media"

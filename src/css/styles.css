@@ -1,0 +1,258 @@
+.payment {
+  background-color: #101114;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .payment-wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.navigation {
+  float: left;
+  width: 320px;
+  font-family: "Open Sans", Arial, sans-serif; }
+  .navigation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .navigation__link {
+    display: block;
+    padding-left: 30px;
+    line-height: 75px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #191c24; }
+    .navigation__link:hover {
+      color: #fff;
+      text-decoration: none; }
+    .navigation__link_dark-grey {
+      background-color: #1f2229; }
+    .navigation__link_active {
+      background-color: #2a2d37;
+      color: #808592; }
+      .navigation__link_active:hover {
+        color: #808592; }
+    .navigation__link_logout {
+      color: #808592;
+      border-top: 1px solid #20232b; }
+      .navigation__link_logout:hover {
+        color: #808592; }
+
+.payment * {
+  outline: none; }
+
+.payment-main {
+  width: 640px;
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal; }
+
+.payment-data {
+  padding-top: 38px;
+  padding-left: 30px;
+  background-color: #f7f8f8; }
+
+.payment__text {
+  margin-bottom: 15px;
+  color: #bec6cf; }
+
+.payment-table td {
+  height: 26px; }
+  .payment-table td:first-child {
+    width: 155px;
+    color: #bec6cf; }
+  .payment-table td:nth-child(2) {
+    color: #535864; }
+
+.payment__caption {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #383d43;
+  font-size: 22px;
+  font-family: "Open Sans", Arial, sans-serif; }
+
+.payment__input {
+  height: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 100%;
+  line-height: 40px;
+  border: 1px solid #e4e9ee;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  outline: none; }
+  .payment__input_invalid {
+    border-color: red; }
+
+.payment-form {
+  position: relative;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 45px;
+  background: url(../img/form-bg.png) 0 0 no-repeat; }
+  .payment-form label {
+    margin-bottom: 0;
+    font-weight: normal; }
+  .payment-form__text {
+    margin-bottom: 5px;
+    color: #8494ab; }
+  .payment-form__card {
+    margin-bottom: 13px; }
+    .payment-form__card label {
+      float: left;
+      width: 75px;
+      padding-right: 10px; }
+  .payment-form-date {
+    margin-bottom: 13px; }
+    .payment-form-date .ui-selectmenu-button.ui-button {
+      background-color: #f7f8f8;
+      padding-top: 12px;
+      height: 42px;
+      -webkit-border-radius: 0;
+              border-radius: 0;
+      border-color: #e4e9ee; }
+      .payment-form-date .ui-selectmenu-button.ui-button .ui-icon {
+        position: absolute;
+        right: 10px;
+        width: 16px;
+        height: 8px;
+        top: 17px;
+        background: url(../img/caret.png) center no-repeat; }
+      .payment-form-date .ui-selectmenu-button.ui-button .ui-selectmenu-text {
+        color: #373c43;
+        width: 100%; }
+  .payment-form__month {
+    float: left;
+    padding-right: 10px; }
+    .payment-form__month .ui-selectmenu-button.ui-button {
+      width: 70px; }
+  .payment-form__year {
+    float: left; }
+    .payment-form__year .ui-selectmenu-button.ui-button {
+      width: 87px; }
+  .payment-form__cardholder {
+    margin-bottom: 60px; }
+    .payment-form__cardholder input {
+      width: 320px; }
+      .payment-form__cardholder input::-webkit-input-placeholder {
+        color: #bec6cf; }
+      .payment-form__cardholder input::-moz-placeholder {
+        color: #bec6cf; }
+      .payment-form__cardholder input:-ms-input-placeholder {
+        color: #bec6cf; }
+      .payment-form__cardholder input::placeholder {
+        color: #bec6cf; }
+  .payment-form__button {
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 40px;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#005abf), to(#004ca2));
+    background: -webkit-linear-gradient(top, #005abf, #004ca2);
+    background: linear-gradient(to bottom, #005abf, #004ca2);
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    -webkit-transition-duration: .2s;
+            transition-duration: .2s; }
+    .payment-form__button:active {
+      background: -webkit-gradient(linear, left top, left bottom, from(#004ca2), to(#005abf));
+      background: -webkit-linear-gradient(top, #004ca2, #005abf);
+      background: linear-gradient(to bottom, #004ca2, #005abf); }
+
+.payment-cvv {
+  position: absolute;
+  right: 60px;
+  top: 107px; }
+  .payment-cvv input {
+    width: 138px; }
+  .payment-cvv__tip {
+    position: absolute;
+    background: url(../img/cvv-bg.png) center no-repeat;
+    width: 26px;
+    height: 26px;
+    bottom: 10px;
+    right: 6px; }
+
+.payment-description {
+  padding: 30px;
+  background-color: #373c43;
+  font-size: 12px;
+  line-height: 18px; }
+  .payment-description p {
+    color: #7f8591; }
+
+.payment-page .ui-menu .ui-menu-item-wrapper {
+  font-size: 16px;
+  padding-left: 15px; }
+
+@media screen and (max-width: 1000px) {
+  .payment-wrapper {
+    width: 750px; }
+  .payment-main {
+    width: 550px;
+    font-size: 14px; }
+  .payment-form {
+    padding-top: 16px;
+    background-size: 500px; }
+  .navigation {
+    width: 200px; }
+  .payment-form__cardholder input {
+    width: 290px; }
+  .payment__input {
+    height: 37px;
+    line-height: 35px; }
+  .payment-form-date .ui-selectmenu-button.ui-button {
+    height: 37px;
+    padding-top: 9px; }
+  .payment-form-date .ui-selectmenu-button.ui-button .ui-icon {
+    top: 15px; }
+  .payment-cvv__tip {
+    bottom: 6px; } }
+
+@media screen and (max-width: 768px) {
+  .navigation__link {
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 40px; }
+  .payment-wrapper {
+    width: 450px; }
+  .payment-main {
+    width: 100%; }
+  .payment-data {
+    padding: 20px; }
+  .payment-form {
+    padding-bottom: 0;
+    padding-left: 0;
+    background: transparent; }
+  .payment-form__cardholder {
+    margin-bottom: 20px; }
+  .payment-cvv {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 138px;
+    margin-bottom: 13px; }
+  .navigation {
+    width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .payment-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%; }
+  .payment-data {
+    padding: 15px; }
+  .payment-description {
+    padding: 15px; }
+  .payment-form__card label {
+    width: 61px;
+    padding-right: 5px; } }
+
+/*# sourceMappingURL=maps/styles.css.map */
